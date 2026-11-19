@@ -18,13 +18,14 @@ def main():
         if opcion == "0":
             print("¡Hasta pronto!")
             break
-        elif opcion == "3":
-            busqueda.buscar_libro
+        
         # --- Aquí cada persona añade su elif ---
         elif opcion == "1":
             libro.añadir_libro(biblioteca)
         elif opcion == "2":
             libro.listar_libros(biblioteca)
+        elif opcion == "3":
+            busqueda.buscar_libro(biblioteca)
         else:
             print("Opción no válida")
     
