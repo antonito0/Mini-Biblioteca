@@ -27,18 +27,3 @@ class libro:
 
     def __str__(self):
         return f"Libro(titulo={self.titulo}, autor={self.autor}, isbn={self.isbn})"
-    
-    def añadir_libro(biblioteca):
-        self.titulo = input("Indique el título: ")
-        self.autor = input("Indique el autor: ")
-        self.isbn = input("Indique el ISBN: ")
-        biblioteca.append(self)
-        print("el libro", self.titulo, "añadido correctamente")
-
-    def listar_libros(biblioteca):
-        for libro in biblioteca:
-            print("Título:", libro.titulo)
-            print("Autor:", libro.autor)
-            print("ISBN:", libro.isbn)
-            print("--------------------")
-        
