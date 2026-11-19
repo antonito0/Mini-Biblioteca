@@ -1,6 +1,10 @@
 # --- Aquí cada persona añade el import de su módulo ---
 from datos import cargar_libros
 from datos import guardar_libros
+import busqueda
+
+from libros import libro
+
 
 def mostrar_menu():
     print("\n=== MINI BIBLIOTECA ===")
@@ -8,7 +12,7 @@ def mostrar_menu():
     print("0. Salir")
     print("4. Guardar libros")
    
-
+    
 def main():
     biblioteca = cargar_libros()
     while True:
@@ -17,7 +21,15 @@ def main():
         if opcion == "0":
             print("¡Hasta pronto!")
             break
+        
         # --- Aquí cada persona añade su elif ---
+       
+        elif opcion == "1":
+            libro.añadir_libro(biblioteca)
+        elif opcion == "2":
+            libro.listar_libros(biblioteca)
+        elif opcion == "3":
+            busqueda.buscar_libro(biblioteca)
         elif opcion == 4:
             guardar_libros(biblioteca)
         else:
