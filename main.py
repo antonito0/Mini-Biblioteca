@@ -1,5 +1,5 @@
 # --- Aquí cada persona añade el import de su módulo ---
-
+import busqueda
 
 from libros import libro
 
@@ -18,6 +18,8 @@ def main():
         if opcion == "0":
             print("¡Hasta pronto!")
             break
+        elif opcion == "3":
+            busqueda.buscar_libro
         # --- Aquí cada persona añade su elif ---
         elif opcion == "1":
             libro.añadir_libro(biblioteca)
