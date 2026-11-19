@@ -36,13 +36,19 @@ class libro:
     def añadir_libro(biblioteca):
         titulo = input("Indique el título: ")
         autor = input("Indique el autor: ")
-        isbn = input("Indique el ISBN: ")
+        anio = input("Indique el año: ")
 
-        nuevo_libro = libro(titulo, autor, isbn)
+        nuevo_libro = {
+            'titulo': titulo,
+            'autor': autor,
+            'anio': anio
+        }
         biblioteca.append(nuevo_libro)
 
-        print("El libro", titulo, "añadido correctamente")
+        guardar_libros(biblioteca)
 
+        print("El libro", titulo, "añadido correctamente")
+ 
     @staticmethod
     def listar_libros(biblioteca):
         for libro_actual in biblioteca:
