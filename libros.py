@@ -24,7 +24,6 @@ class libro:
     @isbn.setter    
     def isbn(self, nuevo_isbn):
         self._isbn = nuevo_isbn 
-        
 
     def __str__(self):
         return f"Libro(titulo={self.titulo}, autor={self.autor}, isbn={self.isbn})"
